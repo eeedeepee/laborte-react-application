@@ -1,0 +1,20 @@
+.app-bar {
+  z-index: 1201; /* z-index of Drawer + 1 */
+}
+
+.drawer {
+  width: 240px;
+  flex-shrink: 0;
+}
+
+.drawer .paper {
+  width: 240px;
+  box-sizing: border-box;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 24px;
+  width: calc(100% - 240px);
+  margin-top: 64px; /* Height of AppBar */
+}

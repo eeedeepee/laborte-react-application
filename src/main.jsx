@@ -1,10 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
+import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+const theme = createTheme();
+
+ReactDOM.render(
+  <ThemeProvider theme={theme}>
+    <CssBaseline />
     <App />
-  </React.StrictMode>,
-)
+  </ThemeProvider>,
+  document.getElementById('root')
+);
